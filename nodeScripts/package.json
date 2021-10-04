@@ -1,0 +1,11 @@
+{
+  "name": "weather-forecast-ramya",
+  "version": "1.0.0",
+  "description": "Weather forecast logic to give random data.",
+  "main": "timeZone.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ramya.dhandapani@solitontech.com",
+  "license": "ISC"
+}

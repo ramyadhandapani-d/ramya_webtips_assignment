@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styleSheets/style.css">
+  <title>Weather</title>
+</head>
+<body>
+<section class="top">
+  <div class="top-left">
+    <div class="top-left-in">
+      <div class="input-col">
+        <div class="input-col-in">
+          <div class="city-list">
+            <div class="city-icon-col">
+              <img class="city-icon" id="city-icon" src="..\assets\Icons for cities\nome.svg" alt="City Icon">
+            </div>
+            <div class="city-list-col">
+              <select  class="city-list-menu" id="city-list-menu">
+                <!-- <option value="Delhi">New Delhi</option> -->
+              </select>
+            </div>                            
+          </div>                      
+            <div class="date-time" id="date-time" ><div>Time<small>-</small>
+              <img class="amState" src="..\assets\pmState.svg" alt="PM"></div><div>Date</div></div>
+        </div>
+      </div>
+            <div class="parameters-col">
+              <div class="parameters" id="parameters">
+                <div class="param-line">Temp &#8451;<br><h1>--</h1></div>
+                <div>Humidity<br><h1>--</h1></div>
+                <div class="param-line">Temp F<br><h1>--</h1></div>
+                <div>Precipitation<br><h1>--</h1></div>
+              </div>
+            </div>
+    </div>
+  </div>
+  <div class="top-right">
+    <div>
+      <div class="timeline" id="timeLineTime">
+        <div>-</div>
+        <div>-</div>
+        <div>-</div>
+        <div>-</div>
+        <div>-</div>
+      </div>
+      <div class="timeline-bar" >
+        <div></div>
+        <div></div>
+        <div></div>  
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>  
+        <div></div>
+        <div></div>    
+      </div>
+      <div class="timeline" id="timeLineIcon">
+        <div><img alt="Icon"></div>
+        <div><img alt="Icon"></div>
+        <div><img alt="Icon"></div>
+        <div><img alt="Icon"></div>
+        <div><img alt="Icon"></div>
+      </div>
+      <div class="timeline" id="timeLineTemp">        
+        <div>-</div>
+        <div>-</div>
+        <div>-</div>  
+        <div>-</div>
+        <div>-</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="middle">
+  <div class="preference">
+    <div class="pref-left">Top cities around the world</div>
+    <div class="pref-right" id="preferenceIcon">
+      <img src="../assets/Weather Icons/sunnyIcon.svg" alt="weather_icon">
+          <img src="../assets/Weather Icons/snowflakeIcon.svg" alt="weather_icon">
+          <img src="../assets/Weather Icons/rainyIcon.svg" alt="weather_icon">
+          Display Top
+          <input id="spinner" type="number" class="display-top" value="5" min="3" max="10">
+    </div>
+  </div>
+  <div class="card-buttons">
+    <a class="previous round" id="previous"><img src="../assets/backwardArrow.svg" alt="prev" class="weather-icon"></a>
+    <a class="next round" id="next"><img src="../assets/forwardArrow.svg" alt="next" class="weather-icon"></a>
+  </div>
+  <div class="city-card" id="cityCard">
+    <!-- <div class="container" id="container">
+      <div>Brokenhill<br>10:00 AM<br>29-Jul-2021</div>
+      <div><img src="../assets/Weather Icons/sunnyIcon.svg" alt="weather_icon" class="weather-icon"> 25 &#8451;</div>
+      <div><div><img src="../assets/Weather Icons/humidityIcon.svg" alt="weather_icon" class="weather-icon"> 53%</div><div>
+          <img src="../assets/Weather Icons/precipitationIcon.svg" alt="weather_icon" class="weather-icon"> 10%</div></div>  
+      <div><img src="../assets/Icons for cities/brokenhill.svg" alt="city_icon"class="middle-img"></div>   
+    </div>-->
+  </div>
+</section>
+<section class="bottom">
+  <div class="sort">
+    <div class="sort-left">Cities across continents at a Glance</div>
+    <div class="sort-right" id="arrow">Continent Name<img src="../assets/arrowDown.svg" alt="down" class="arrow" > 
+          Temperature<img src="../assets/arrowUp.svg" alt="up" class="arrow" > 
+    </div>
+  </div>   
+  <div class="bottom-bar" id="bottomBar">
+    <!-- <div class="bottom-card">
+      <div class="bottom-card-city"><h3>Asia</h3>Delhi,10:10 AM </div>
+      <div class="bottom-card-temp"><h3>1 &#8451;</h3>
+      <img src="../assets/Weather Icons/humidityIcon.svg" alt="weather_icon" class="weather-icon">53%</div>
+    </div> -->
+  </div>
+</section>
+<script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
